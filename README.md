@@ -1,1 +1,1 @@
-# Plugin Template
+# PluginTemplate
