@@ -1,7 +1,7 @@
 // c 2023-09-26
-// m 2023-12-24
+// m 2024-01-22
 
-string title = "PluginTemplate";
+const string title = "\\$" + Icons::Arrows + "\\$G PluginTemplate";
 
 [Setting category="General" name="Enabled"]
 bool S_Enabled = true;
@@ -12,3 +12,5 @@ void RenderMenu() {
 }
 
 void Main() { }
+
+void Render() { }
