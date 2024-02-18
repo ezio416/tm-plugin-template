@@ -1,5 +1,5 @@
 // c 2023-09-26
-// m 2024-01-22
+// m 2024-02-18
 
 const string title = "\\$FFF" + Icons::Arrows + "\\$G PluginTemplate";
 
@@ -11,6 +11,8 @@ void RenderMenu() {
         S_Enabled = !S_Enabled;
 }
 
-void Main() { }
+void Main() {
+}
 
-void Render() { }
+void Render() {
+}
