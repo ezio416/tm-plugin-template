@@ -1,5 +1,6 @@
 ![Signed](https://img.shields.io/badge/Signed-No-FF3333)
 ![Game Trackmania](https://img.shields.io/badge/Game-Trackmania-blue)
+
 # PluginTemplate
 
 A template for writing plugins more easily.
