@@ -1,7 +1,8 @@
 // c 2023-09-26
-// m 2024-03-03
+// m 2024-09-29
 
-const string title = "\\$FFF" + Icons::Arrows + "\\$G PluginTemplate";
+Meta::Plugin@ thisPlugin = Meta::ExecutingPlugin();
+const string  title      = "\\$FFF" + Icons::Arrows + "\\$G " + thisPlugin.Name;
 
 [Setting category="General" name="Enabled"]
 bool S_Enabled = true;
@@ -15,18 +16,18 @@ bool S_HideWithOP = false;
 void Main() {
 }
 
-void RenderMenu() {
-    if (UI::MenuItem(title, "", S_Enabled))
-        S_Enabled = !S_Enabled;
-}
-
 void Render() {
-    if (
-        !S_Enabled
+    if (false
+        || !S_Enabled
         || (S_HideWithGame && !UI::IsGameUIVisible())
         || (S_HideWithOP && !UI::IsOverlayShown())
     )
         return;
 
     ;
+}
+
+void RenderMenu() {
+    if (UI::MenuItem(title, "", S_Enabled))
+        S_Enabled = !S_Enabled;
 }
