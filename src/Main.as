@@ -1,5 +1,5 @@
 // c 2023-09-26
-// m 2024-10-08
+// m 2024-12-16
 
 const string  pluginColor = "\\$FFF";
 const string  pluginIcon  = Icons::Arrows;
@@ -27,13 +27,16 @@ void Render() {
     )
         return;
 
-    if (UI::Begin(pluginTitle, S_Enabled, UI::WindowFlags::None)) {
-        ;
-    }
+    if (UI::Begin(pluginTitle, S_Enabled, UI::WindowFlags::None))
+        RenderWindow();
     UI::End();
 }
 
 void RenderMenu() {
     if (UI::MenuItem(pluginTitle, "", S_Enabled))
         S_Enabled = !S_Enabled;
+}
+
+void RenderWindow() {
+    ;
 }
