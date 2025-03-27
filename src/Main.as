@@ -1,19 +1,10 @@
 // c 2023-09-26
-// m 2024-12-16
+// m 2025-03-27
 
 const string  pluginColor = "\\$FFF";
 const string  pluginIcon  = Icons::Arrows;
 Meta::Plugin@ pluginMeta  = Meta::ExecutingPlugin();
 const string  pluginTitle = pluginColor + pluginIcon + "\\$G " + pluginMeta.Name;
-
-[Setting category="General" name="Enabled"]
-bool S_Enabled = true;
-
-[Setting category="General" name="Show/hide with game UI"]
-bool S_HideWithGame = true;
-
-[Setting category="General" name="Show/hide with Openplanet UI"]
-bool S_HideWithOP = false;
 
 void Main() {
     ;
