@@ -11,6 +11,7 @@ Thanks for wanting to contribute to the project! I only have a few basic rules f
 - do not use any code for which you do not have the rights
 - do not use any code which would require an addition/change of license
 - variables whose values do not change after initialization should be marked `const` (excluding handles)
+- code should compile with no warnings
 - match my coding style as best as you can
 - for substantial contributions, split your changes into multiple, smaller commits
 - no squashing/rebasing - every commit should be tracked and have a clear purpose
